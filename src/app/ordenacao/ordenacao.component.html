@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row justify-content-start"> <br>
+    <br>
+    <h3>Funcionarios</h3>
+    <table>
+      <tr>
+        <th>Nome</th>
+        <th>Cargo</th>
+        <th>Salario</th>
+      </tr>
+      <tr *ngFor="let item of funcionarios">
+        <td>{{item.nome}}</td>
+        <td>{{item.cargo}}</td>
+        <td>{{item.salario}}</td>
+      </tr>
+    </table>
+
+
+    <br>
+    <div class="col-md-12 ">
+      <div class="col-md-4">
+        <button type="button" (click)="ordenarNome()" class="btn btn-primary">Nome crescente</button>
+      </div>
+
+      <div class="col-md-4">
+        <button type="button" (click)="ordenarSalario()" class="btn btn-primary">Salario  crescente</button>
+      </div>
+
+    </div>
+    <div class="col-md-12 space-up">
+      <div class="col-md-4">
+        <button type="button" (click)="ordenarNomeInvestido()" class="btn btn-primary">Nome decrescente</button>
+      </div>
+
+      <div class="col-md-4">
+        <button type="button" (click)="ordenarSalarioInvestido()" class="btn btn-primary">Salario decrescente</button>
+      </div>
+
+    </div>
+    <div class="col-md-4">
+    </div>
+
+  </div>
+
+</div>
+

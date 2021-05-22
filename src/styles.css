@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.space-up{
+    padding-top: 10px;
+}
